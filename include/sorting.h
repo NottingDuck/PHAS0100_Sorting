@@ -34,7 +34,7 @@ std::vector<T> merge(const std::vector<T> &v1, const std::vector<T> &v2)
 }
 
 template<typename T>
-std::vector<T> rec_merge_sort(const std::vector<T> &v)
+std::vector<T> merge_sort(const std::vector<T> &v)
 {
     if(v.size() == 1)
     {
@@ -45,15 +45,10 @@ std::vector<T> rec_merge_sort(const std::vector<T> &v)
         std::vector<T> v1, v2;
         v1.insert(v1.begin(), v.begin(), v.begin() + v.size()/2);
         v2.insert(v2.begin(), v.begin() + v.size()/2, v.end());
-        return merge(rec_merge_sort(v1), rec_merge_sort(v2));
+        return merge(merge_sort(v1), merge_sort(v2));
     }
 }
 
-template<typename T>
-std::vector<T> merge_sort(const std::vector<T> &v)
-{
-    return rec_merge_sort(v);
-}
 
 template<typename T>
 std::vector<T> insertion_sort(const std::vector<T> &v)
