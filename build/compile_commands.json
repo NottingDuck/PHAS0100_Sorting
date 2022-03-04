@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/PHAS0100_Sorting/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/workspaces/PHAS0100_Sorting/include  -g   -std=gnu++11 -o CMakeFiles/Sort.dir/src/sorting.cpp.o -c /workspaces/PHAS0100_Sorting/src/sorting.cpp",
+  "file": "/workspaces/PHAS0100_Sorting/src/sorting.cpp"
+}
+]

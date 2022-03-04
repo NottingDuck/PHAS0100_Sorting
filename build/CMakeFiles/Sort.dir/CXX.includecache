@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sorting.h
+vector
+-
+
+/workspaces/PHAS0100_Sorting/src/sorting.cpp
+chrono
+-
+sorting.h
+/workspaces/PHAS0100_Sorting/src/sorting.h
+time.h
+-
+random
+-
+iostream
+-
+
